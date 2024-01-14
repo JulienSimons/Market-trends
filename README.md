@@ -7,6 +7,10 @@ This research partitions X labels of the data into a daily dataset for interpret
 
 The final results of this study use data from Apple stock. The linear regression model resulted in 75% accuracy in a 1-year time frame and 71% accuracy in a 10-year time frame.
 
+### v1.0.9 Beta Release
+Adding macro time intervals within a 10-year frame. Time intervals (i.e. daily, weekly, and monthly) represent the X-axis of each price data point on the Y-axis. Training is done on data from 2011 to 2021 for Apple, Telsa, and Bitcoin.
+
+The final scoring comes out to 70.7% accuracy but with a tendency to sell rather than buy. Ideally, buying to hold would result in the greatest returns. An ideal selling point would occur when a "Strong Sell" signal arises. This did not appear, because evidently the price action of the following tickers remained in a macro bull-run. Future experiments can use new data during bear markets to better train and test the machine learning model algorithm.
+
 ### v1.1.1 Alpha Release
-This release needs much tidying after Yahoo Finance changed their availability of data since late-2021.
-The resulting errors are due to a change in time variables that need to be accounted for and normalized once again.
+This release is for non-production research purposes. Yahoo Finance changed their format and availability of data since late-2021. The resulting errors are due to a change in time variables that need to be accounted for and normalized once again.
